@@ -1,0 +1,71 @@
+html,  body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Para evitar barras de rolagem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+#menu-icon {
+    display: none; /* Inicialmente, o ícone do menu está oculto */
+    cursor: pointer;
+}
+
+canvas {
+    width: 80%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block; /* Exibe o ícone do menu em dispositivos menores */
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        display: none; /* Oculta as opções de navegação em dispositivos menores */
+    }
+
+    nav.active {
+        display: flex; /* Exibe as opções de navegação quando o menu é clicado */
+    }
+
+    nav a {
+        width: 100%;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renderização em Tempo Real</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="Logo do Site">
+        </a>
+    </header>
+    <!-- Barra de Navegação -->
+    <div class="nav-bg ">
+        <nav class="navegacao-principal contenedor">
+            <a href="index.html">Exemplo de Uso</a>
+            <a href="three.htm"> Three</a>
+            <a href="playCanvas.html"> PlayCanvas</a>
+            <a href="Babylon.html"> Babylon</a>
+        </nav>
+    </div>
+
+    <!-- Cria um elemento de canvas no HTML com o ID "render-canvas". Este será o local onde a cena 3D será renderizada.-->
+    <canvas id="render-canvas"></canvas>
+    
+    <!--Inclusão da biblioteca PlayCanvas para renderização 3D.-->
+    <script src="https://code.playcanvas.com/playcanvas-stable.min.js"></script>
+    <script src="js/main/script.js"></script>
+   <script src="js/main/PlayCanvas.js"></script>
+    
+</body>
+</html>
